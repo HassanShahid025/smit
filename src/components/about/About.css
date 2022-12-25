@@ -1,0 +1,22 @@
+.about-img{
+    height: 100%;
+    width: 100%;
+}
+
+.about-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-img-container{
+    width: 40%;
+    height: 40rem;
+    margin-right: 1rem;
+}
+
+.about-text{
+    width: 40%;
+}
+.card-container{
+    display: flex;
+}

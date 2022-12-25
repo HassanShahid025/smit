@@ -1,24 +1,24 @@
+import Box from '@mui/material/Box';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import About from './components/about/About';
+import Carousel from './components/carousel/ImageSlider'
+import CoursesPages from './components/courses/CoursesPages';
+import ResponsiveAppBar from './components/navBar/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ResponsiveAppBar/>
+      <Box>
+      <Carousel/>
+      </Box>
+      <Box>
+        <CoursesPages/>
+      </Box>
+      <Box>
+        <About/>
+      </Box>
     </div>
   );
 }

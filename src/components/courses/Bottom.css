@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    padding: 1rem;
+  }
+
+  .bottomText{
+    transform: translateY(20%);
+  }
