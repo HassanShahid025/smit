@@ -18,7 +18,7 @@ const About = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </Typography>
                     <div className='card-container'>
-                        <Card sx={{ maxWidth: 150,backgroundColor:'red' }}>
+                        <Card sx={{ maxWidth: 250,backgroundColor:'red' }}>
                             <CardContent>
                                 <Typography variant="h4" color="white" textAlign='center'>
                                 10+
@@ -29,6 +29,26 @@ const About = () => {
                             </CardContent>
                         </Card>
                         <Card sx={{ maxWidth: 150,backgroundColor:'green' }}>
+                            <CardContent>
+                                <Typography variant="h4" color="white" textAlign='center'>
+                                10+
+                                </Typography>
+                                <Typography variant="h4" color="white">
+                                Courses
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ maxWidth: 150,backgroundColor:'green' }}>
+                            <CardContent>
+                                <Typography variant="h4" color="white" textAlign='center'>
+                                10+
+                                </Typography>
+                                <Typography variant="h4" color="white">
+                                Courses
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card sx={{ maxWidth: 250,backgroundColor:'green' }}>
                             <CardContent>
                                 <Typography variant="h4" color="white" textAlign='center'>
                                 10+
