@@ -32,3 +32,15 @@
     margin-left: 2rem;
     width: 4rem;
 }
+
+.about-props-container{
+    display: flex;
+    margin: 1rem 0;
+}
+.about-props-heading{
+    margin-bottom: 1rem;
+}
+
+.about-props-icon{
+    margin-right: 1rem;
+}
