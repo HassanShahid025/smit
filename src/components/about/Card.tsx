@@ -1,6 +1,7 @@
 import { Card, CardContent, Typography } from "@mui/material"
 
 const AboutCards = () =>{
+
     return(
         <div className='card-container'>
             <Card sx={{ maxWidth: 250,backgroundColor:'red' }}>
