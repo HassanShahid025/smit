@@ -6,6 +6,7 @@ import Carousel from './components/carousel/ImageSlider'
 import CoursesPages from './components/courses/CoursesPages';
 import ResponsiveAppBar from './components/navBar/Navbar';
 
+
 function App() {
   return (
     <div className="App">
