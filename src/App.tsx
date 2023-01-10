@@ -4,6 +4,7 @@ import './App.css';
 import About from './components/about/About';
 import Carousel from './components/carousel/ImageSlider'
 import CoursesPages from './components/courses/CoursesPages';
+import { FbCourses } from './components/courses/FirebaseCourses';
 import ResponsiveAppBar from './components/navBar/Navbar';
 
 
@@ -15,7 +16,7 @@ function App() {
       <Carousel/>
       </Box>
       <Box>
-        <CoursesPages/>
+        <FbCourses/>
       </Box>
       <Box>
         <About/>
