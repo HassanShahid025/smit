@@ -6,6 +6,7 @@ import Carousel from './components/carousel/ImageSlider'
 import CoursesPages from './components/courses/CoursesPages';
 import { FbCourses } from './components/courses/FirebaseCourses';
 import ResponsiveAppBar from './components/navBar/Navbar';
+import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
       </Box>
       <Box>
         <About/>
+      </Box>
+      <Box>
+        <RegistrationForm/>
       </Box>
     </div>
   );

@@ -1,4 +1,5 @@
 export interface CourseType {
+    img?:string;
     name?:string;
     rating?:number;
     reviews?:number;
