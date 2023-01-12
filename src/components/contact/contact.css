@@ -1,0 +1,37 @@
+.contact-info{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ECF4FF;
+    
+}
+
+.paper-item{
+    display: flex;
+    padding: 1rem 1rem;
+}
+
+.icon{
+    color: #fff;
+    background-color: #2878EB;
+    width: 78px;
+    height: 78px;
+    font-size: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.paper-text{
+    width: 14rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.paper-text h4{
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: .8rem 0;
+}

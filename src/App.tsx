@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import About from './components/about/About';
 import Carousel from './components/carousel/ImageSlider'
+import Contact from './components/contact/Contact';
 import CoursesPages from './components/courses/CoursesPages';
 import { FbCourses } from './components/courses/FirebaseCourses';
 import ResponsiveAppBar from './components/navBar/Navbar';
@@ -24,6 +25,9 @@ function App() {
       </Box>
       <Box>
         <RegistrationForm/>
+      </Box>
+      <Box>
+        <Contact/>
       </Box>
     </div>
   );

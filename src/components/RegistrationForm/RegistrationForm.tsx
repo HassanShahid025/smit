@@ -34,20 +34,20 @@ const RegistrationForm = () => {
       qualification
     })
     alert("Form added sucessfully")
-    function clearField(){
-      setName('');
-      setfatherName('')
-      setEmail('')
-      setPhone('')
-      setCnic('')
-      setFcnic('')
-      setCourse('Web & App Development')
-      setCity('Karachi')
-      setGender('Male')
-      setDob('')
-      setAddress('')
-      setQualification('Matric')
-    }
+
+    setName('');
+    setfatherName('')
+    setEmail('')
+    setPhone('')
+    setCnic('')
+    setFcnic('')
+    setCourse('Web & App Development')
+    setCity('Karachi')
+    setGender('Male')
+    setDob('')
+    setAddress('')
+    setQualification('Matric')
+    
   }
 
     return(

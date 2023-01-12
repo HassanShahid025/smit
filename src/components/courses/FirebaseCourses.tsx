@@ -26,7 +26,7 @@ export const FbCourses = () => {
     return(
         <Container sx={{marginY:"2rem"}}>
             <Typography variant='h3' component='h1' textAlign='center' sx={{marginBottom:'1rem'}}>Courses</Typography>
-            <Grid container spacing={6}>  
+            <Grid container spacing={6} sx={{paddingX:"2rem"}}>  
                 {
                     courses && courses.length ? (
                     courses.map((course) => (
