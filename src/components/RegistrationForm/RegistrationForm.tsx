@@ -4,22 +4,50 @@ import './RegistrationForm.css'
 import { addForm } from '../../firebase-config';
 
 const RegistrationForm = () => {
-  const [Name, setName] = useState('');
+  const [name, setName] = useState('');
   const [fatherName, setfatherName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [cnic, setCnic] = useState('');
   const [fcnic, setFcnic] = useState('');
-  const [course, setCourse] = useState('Select Course');
-  const [city, setCity] = useState('Select City');
-  const [gender, setGender] = useState('Select Gender');
+  const [course, setCourse] = useState('Web & App Development');
+  const [city, setCity] = useState('Karachi');
+  const [gender, setGender] = useState('Male');
   const [dob, setDob] = useState('');
   const [address, setAddress] = useState('');
-  const [qualification, setQualification] = useState('Select Qualification');
+  const [qualification, setQualification] = useState('Matric');
 
   const addFormFirebase = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form added")
+    addForm({
+      name,
+      fatherName,
+      email,
+      phone,
+      cnic,
+      fcnic,
+      course,
+      city,
+      gender,
+      dob,
+      address,
+      qualification
+    })
+    alert("Form added sucessfully")
+    function clearField(){
+      setName('');
+      setfatherName('')
+      setEmail('')
+      setPhone('')
+      setCnic('')
+      setFcnic('')
+      setCourse('Web & App Development')
+      setCity('Karachi')
+      setGender('Male')
+      setDob('')
+      setAddress('')
+      setQualification('Matric')
+    }
   }
 
     return(
@@ -29,7 +57,7 @@ const RegistrationForm = () => {
               <div className='form1'>
                 <div className='form-element'>  
                   <label >Full Name</label>
-                  <TextField size='medium' placeholder="Full Name" required value={Name} onChange={(e)=> setName(e.target.value)}/>
+                  <TextField size='medium' placeholder="Full Name" required value={name} onChange={(e)=> setName(e.target.value)}/>
                 </div>
                 <div className='form-element'>  
                   <label >Father Name</label>
@@ -37,7 +65,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className='form-element'>  
                   <label >Email</label>
-                  <TextField size='medium' placeholder="Email"required value={email} onChange={(e)=> setEmail(e.target.value)} />
+                  <TextField type={email} size='medium' placeholder="Email"required value={email} onChange={(e)=> setEmail(e.target.value)} />
                 </div>
                 <div className='form-element'>  
                   <label >Phone</label>
