@@ -35,3 +35,40 @@
     font-size: 1.3rem;
     margin: .8rem 0;
 }
+
+.heading{
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+.input-fields input,textarea{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    margin-bottom: 1.3rem;
+    padding-left: .2rem;
+    border-bottom: 1px solid #ced4da;
+    font-size: 1.2rem;
+}
+
+.input-fields input,textarea:focus{
+    outline-width: 5px;
+    outline-color: rgba(132, 162, 237, 0.731);
+}
+
+.name-email input{
+    width: 47%;
+}
+.name-input{
+    margin-right:1.8rem ;
+}
+
+.full-length{
+    width: 100%;
+}
+
+button{
+    color: #fff;
+    background-color: #2878EB;
+    width: 9rem;
+    height: 3.5rem
+}

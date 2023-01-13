@@ -18,7 +18,7 @@ const About2 = () => {
 
                     <div className="about-props-container">
                         <div className="about-props-icon">
-                            <SchoolIcon sx={{color:'white', fontSize:50}}/>
+                            <SchoolIcon sx={{color:'white', fontSize:40}}/>
                         </div>
                         <div>
                             <h2 className="about-props-heading">SKILLED INSTRUCTORS</h2>
@@ -27,7 +27,7 @@ const About2 = () => {
                     </div>
                     <div className="about-props-container">
                         <div className="about-props-icon">
-                            <CardMembershipIcon sx={{color:'white', fontSize:50}}/>
+                            <CardMembershipIcon sx={{color:'white', fontSize:40}}/>
                         </div>
                         <div>
                             <h2 className="about-props-heading">INTERNATIONAL CERTIFICATE</h2>
@@ -36,7 +36,7 @@ const About2 = () => {
                     </div>
                     <div className="about-props-container">
                         <div className="about-props-icon">
-                            <SchoolIcon sx={{color:'white', fontSize:50}}/>
+                            <SchoolIcon sx={{color:'white', fontSize:40}}/>
                         </div>
                         <div>
                             <h2 className="about-props-heading">SKILLED INSTRUCTORS</h2>

@@ -23,3 +23,10 @@ export interface FormType {
     address:string;
     qualification:string;
 }
+
+export interface MsgType{
+    name:string;
+    email:string;
+    subject:string;
+    message:string
+}

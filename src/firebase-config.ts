@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {addDoc, collection, getFirestore} from "@firebase/firestore";
-import { FormType } from "./types/CourseType";
+import { FormType, MsgType } from "./types/CourseType";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDlWN684trrclCjycSU9qYA8-KLlRmMBCE",
@@ -21,6 +21,13 @@ export const coursesRef = collection(db,"courses");
 export const formCollection = collection(db, "Registration Form");
 export const addForm = async (formData:FormType) => {
   const newForm = await addDoc(formCollection, {...formData});
+  console.log(`form was added ${newForm.path}`)
+}
+
+//ContactUS
+export const messageCollection = collection(db, "Contact");
+export const addMessage = async (msgData:MsgType) => {
+  const newForm = await addDoc(messageCollection, {...msgData});
   console.log(`form was added ${newForm.path}`)
 }
 

@@ -42,10 +42,14 @@
 }
 
 .about-props-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2878EB;
-    height: 47px;
+    height: 54px;
     border-radius: 10px;
     margin-right: 1rem;
+    padding: 0 .7rem;
 }
 
 .about2-img-container{
