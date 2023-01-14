@@ -7,7 +7,7 @@ import CardMembershipIcon from '@mui/icons-material/CardMembership';
 
 const About2 = () => {
     return(
-        <Container sx={{marginY:"7rem"}}>
+        <Container sx={{marginY:"7rem", backgroundColor:"#f5f5f5"}}>
             <div className='about-conatiner'>
                 <div className='about-text'>
                     <h1>WHY YOU SHOULD START LEARING WITH US?</h1>

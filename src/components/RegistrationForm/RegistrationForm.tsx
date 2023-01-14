@@ -52,7 +52,7 @@ const RegistrationForm = () => {
 
     return(
         <Container sx={{marginY:"2rem"}}>
-            <Typography variant='h3' component='h1' textAlign='center' sx={{marginBottom:'1rem'}}>Registration Form</Typography>
+            <Typography variant='h3' component='h1' textAlign='center' sx={{marginY:'3rem', fontSize:'5rem',fontWeight:'700'}}>Registration Form</Typography>
             <form onSubmit={(e) => addFormFirebase(e)}>
               <div className='form1'>
                 <div className='form-element'>  

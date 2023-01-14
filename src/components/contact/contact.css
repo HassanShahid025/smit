@@ -1,3 +1,7 @@
+*{
+    font-family: 'Playfair Display', sans-serif;
+  
+  }
 .contact-info{
     height: 450px;
     display: flex;

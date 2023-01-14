@@ -1,0 +1,18 @@
+*{
+    font-family: 'Playfair Display', sans-serif;
+  
+  }
+.footer-container{
+    position: absolute;
+    margin-top: 3.9rem;
+    width: 100vw;
+    height: 5rem;
+    background-color: rgb(57, 113, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-p{
+    color: #fff;
+    font-weight: 600;
+}

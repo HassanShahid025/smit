@@ -10,7 +10,7 @@ const About = () => {
     return(
         <Container sx={{marginY:"2rem"}}>
             <Container sx={{marginY:"2rem"}}>
-                <Typography variant='h3' component='h1' textAlign='center' sx={{marginBottom:'1rem'}}>About</Typography>
+                <Typography variant='h3' component='h1' textAlign='center' sx={{marginY:'3rem', fontSize:'5rem',fontWeight:'700'}}>About</Typography>
                 <div className='about-conatiner'>
                     <div className='about-img-container'>
                         <img src={aboutImg} alt="image" className='about-img'/>

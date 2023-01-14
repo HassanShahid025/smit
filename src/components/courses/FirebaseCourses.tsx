@@ -25,7 +25,7 @@ export const FbCourses = () => {
     
     return(
         <Container sx={{marginY:"2rem"}}>
-            <Typography variant='h3' component='h1' textAlign='center' sx={{marginBottom:'1rem'}}>Courses</Typography>
+            <Typography variant='h3' component='h1' textAlign='center' sx={{marginY:'3rem', fontSize:'5rem',fontWeight:'700'}}>Courses</Typography>
             <Grid container spacing={6} sx={{paddingX:"2rem"}}>  
                 {
                     courses && courses.length ? (
