@@ -77,11 +77,11 @@ const Contact = () =>{
                     <form onSubmit={(e) => sendMessage(e)}>
                         <div className="input-fields">
                             <div className="name-email">
-                                <input className="name-input" type="text" placeholder="Your Name" value={name} onChange={(e)=> setName(e.target.value)}/>
-                                <input type="text" placeholder="Your Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
+                                <input required className="name-input" type="text" placeholder="Your Name" value={name} onChange={(e)=> setName(e.target.value)}/>
+                                <input required type="text" placeholder="Your Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
                             </div>
-                            <input className="full-length" type="text" placeholder="Subject" style={{display:"block"}} value={subject} onChange={(e)=> setSubject(e.target.value)}/>
-                            <textarea className="full-length" placeholder="Message" value={message} onChange={(e)=> setMessage(e.target.value)} rows={5}></textarea>
+                            <input required className="full-length" type="text" placeholder="Subject" style={{display:"block"}} value={subject} onChange={(e)=> setSubject(e.target.value)}/>
+                            <textarea required className="full-length" placeholder="Message" value={message} onChange={(e)=> setMessage(e.target.value)} rows={5}></textarea>
                             <button typeof='submit'>Send Message</button>
                         </div>
                     </form>

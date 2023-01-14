@@ -10,12 +10,12 @@ const RegistrationForm = () => {
   const [phone, setPhone] = useState('');
   const [cnic, setCnic] = useState('');
   const [fcnic, setFcnic] = useState('');
-  const [course, setCourse] = useState('Web & App Development');
-  const [city, setCity] = useState('Karachi');
-  const [gender, setGender] = useState('Male');
+  const [course, setCourse] = useState('');
+  const [city, setCity] = useState('');
+  const [gender, setGender] = useState('');
   const [dob, setDob] = useState('');
   const [address, setAddress] = useState('');
-  const [qualification, setQualification] = useState('Matric');
+  const [qualification, setQualification] = useState('');
 
   const addFormFirebase = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -83,6 +83,7 @@ const RegistrationForm = () => {
                 <div className="form-element">
                   <label>Select Course</label>
                   <select required value={course} onChange={(e)=> setCourse(e.target.value)}>
+                      <option value="Select Course">Select Course</option>
                       <option value="Web & App Development">Web & App Development</option>
                       <option value="Graphic Designing">Graphic Designing</option>
                       <option value="Ai & Chatbot">Ai & Chatbot</option>
@@ -91,6 +92,7 @@ const RegistrationForm = () => {
                 <div className="form-element">
                   <label>Select City</label>
                   <select required value={city} onChange={(e)=> setCity(e.target.value)}>
+                      <option value="Select City">Select City</option>
                       <option value="Karachi">Karachi</option>
                       <option value="Hyderabd">Hyderabd</option>
                       <option value="Faislabad">Faislabad</option>
@@ -99,6 +101,7 @@ const RegistrationForm = () => {
                 <div className="form-element">
                   <label>Select Gender</label>
                   <select required value={gender} onChange={(e)=> setGender(e.target.value)}>
+                      <option value="Select Gender">Select Gender</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                   </select>
@@ -117,6 +120,7 @@ const RegistrationForm = () => {
                 <div className="form-element" >
                   <label>Last Qualification</label>
                   <select required value={qualification} onChange={(e)=> setQualification(e.target.value)}>
+                      <option value="Select Qualification">Select Qualification</option>
                       <option value="Matric">Matric</option>
                       <option value="Intermediate">Intermediate</option>
                   </select>
