@@ -35,7 +35,7 @@ export const FbCourses = () => {
                         </Grid>
                     ))
                     ) : (
-                    <div>Hello World</div>
+                    <div>Loading...</div>
                     )
                 }
             </Grid>

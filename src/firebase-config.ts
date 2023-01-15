@@ -31,3 +31,7 @@ export const addMessage = async (msgData:MsgType) => {
   console.log(`form was added ${newForm.path}`)
 }
 
+//News
+export const newsRef = collection(db, "news");
+
+

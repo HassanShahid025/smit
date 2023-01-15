@@ -1,14 +1,12 @@
 import './news.css'
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Button, Paper } from "@mui/material";
-import img from '../images/slider-img.jpg';
-import img1 from '../images/slider-img2.jpg';
-import img6 from '../images/slider-img6.png';
-import img3 from '../images/slider-img-3.png';
-import img5 from '../images/slider-img5.jpg';
-import Box from '@mui/material/Box';
-import { borderBottom } from '@mui/system';
+import {  Paper } from "@mui/material";
+import { NewsType } from '../../types/CourseType';
+import { onSnapshot } from 'firebase/firestore';
+import { newsRef } from '../../firebase-config';
+import { DocumentData, QuerySnapshot } from "firebase/firestore";
+import NewsSection from './news2';
 
 
 const sxStyles = {
@@ -23,8 +21,22 @@ const sxStyles = {
 
 function News()
 {
+    const [news, setNews] = useState<NewsType[]>([]);
+    
+    useEffect(() => onSnapshot(newsRef, (snapshot : QuerySnapshot<DocumentData>) => {
+        setNews(snapshot.docs.map((doc) => {
+        return {
+            id: doc.id,
+            ...doc.data()
+        }
+    }))
+
+    }), [])
+    
+    const firstFour = news.slice(0, 4);
+
     return (
-        <Carousel animation="slide" duration={500} navButtonsAlwaysVisible={true} indicators={false} sx={{
+        <Carousel autoPlay={false} animation="slide" duration={500} navButtonsAlwaysVisible={true} indicators={false} sx={{
             width:"100wh",
             height:"15rem",
             marginTop:'2rem',
@@ -32,6 +44,18 @@ function News()
             borderBottom:"2px solid #e1e1e1"
         }}>
             <Paper sx={sxStyles}>
+            {
+                firstFour && firstFour.length ? (
+                    
+                    firstFour.map((n) => (
+                    <NewsSection news={n}/>
+                ))
+                ) : (
+                <div>Loading...</div>
+                )
+            }
+            </Paper>
+            {/* <Paper sx={sxStyles}>
                 <div className='news-element'>
                     <h5>January 13, 2023</h5>
                     <a href="">hello world</a>
@@ -52,6 +76,27 @@ function News()
                
                 
         </Paper>
+            <Paper sx={sxStyles}>
+                <div className='news-element'>
+                    <h5>January 13, 2023</h5>
+                    <a href="">hello world</a>
+                </div>
+                <div className='news-element'>
+                    <h5>January 10, 2023</h5>
+                    <a href="">hhhhhhhhh</a>
+                </div>
+                <div className='news-element'>
+                    <h5>January 6, 2023</h5>
+                    <a href="">aaaaaaaa</a>
+                </div>
+                <div className='news-element'>
+                    <h5>January 6, 2023</h5>
+                    <a href="">aaaaaaaa</a>
+                </div>
+               
+               
+                
+        </Paper> */}
         
         </Carousel>
     )

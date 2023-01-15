@@ -30,3 +30,10 @@ export interface MsgType{
     subject:string;
     message:string
 }
+
+export interface NewsType {
+    date?:string;
+    newsText?:string;
+    link?:string;
+    id?:string;
+}

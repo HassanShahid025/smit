@@ -4,6 +4,7 @@ import Contact from '../contact/Contact';
 import { FbCourses } from '../courses/FirebaseCourses';
 import ResponsiveAppBar from '../navBar/Navbar';
 import News from '../news/News';
+import MyComponent from '../news/test';
 import RegistrationForm from '../RegistrationForm/RegistrationForm';
 
 
@@ -12,7 +13,7 @@ function Home() {
   return (
     <div>
       <Carousel/>
-      <News/>
+      <MyComponent/>
       <FbCourses/>
       <About/> 
       <Contact/>   
