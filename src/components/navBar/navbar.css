@@ -39,12 +39,11 @@ nav {
     border-radius:7px ;
     margin-right: 10px;
     text-decoration: none;
-    color: rgb(106, 106, 243);
   }
   
   nav a {
     text-decoration: none;
-    color: rgb(106, 106, 243);;
+    color: #2878EB;;
   }
 
   nav li:hover > a {
@@ -53,6 +52,6 @@ nav {
   }
 
   nav li:hover  {
-    background-color: rgb(106, 106, 243);
+    background-color: #2878EB;;
     transition: all .6s ease-in-out, color 0.2s ease-in-out;
   }

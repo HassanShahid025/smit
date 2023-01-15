@@ -41,10 +41,12 @@
 
 .about-props-container{
     display: flex;
-    margin: 1rem 0;
+    margin: .8rem 0;
+    
 }
 .about-props-heading{
     margin-bottom: 1rem;
+    font-size: 1.4rem;
 }
 
 .about-props-icon{
@@ -60,7 +62,7 @@
 
 .about2-img-container{
     width: 40%;
-    height: 44rem;
+    height: 58rem;
     margin-left: 2rem;
 }
 

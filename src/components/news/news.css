@@ -1,0 +1,28 @@
+.news-element{
+    border: 2px solid #e1e1e1;
+    height: 100%;
+    width: 14rem;
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-element h5{
+    font-weight: 600;
+    color: #063d8a;
+}
+
+.news-element a{
+    color: #2878EB;
+    margin-top: 1.4rem;
+    text-decoration: none;
+}
+
+.news-element a:hover{
+    transition: all .4sec ease-in-out;
+    color: #063d8a;
+    text-decoration: underline;
+}
