@@ -9,7 +9,7 @@ const NewsSection = ({news}:IProps) =>{
     return(
         <div className='news-element'>
             <h5>{news.date}</h5>
-            <a href={news.link}>{news.newsText}</a>
+            <a href={news.link}  target='_blank'>{news.newsText}</a>
         </div>
     )
 }
